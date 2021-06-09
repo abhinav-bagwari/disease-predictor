@@ -72,6 +72,33 @@ Diabetes -->
         <div style="display: flex;flex-direction: column;text-align: center;">
             <h3>Kidney Form</h3>
             <div>
+                <label for="age">Age: </label>
+                <input type="number" min="5" max="130" required name="age" id="age">
+            </div>
+            <div>
+                <label for="gender">Gender: </label>
+                <select name="gender" id="gender" class="selectop">
+                    <option value="" selected>Select Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="notell">Choose not to tell</option>
+                </select>
+            </div>
+            <div>
+                <label for="bloodgrp">Blood Group: </label>
+                <select name="bloodgrp" id="bloodgrp" class="selectop">
+                    <option value="" selected>Select Blood Group</option>
+                    <option value="apos">A+</option>
+                    <option value="aneg">A-</option>
+                    <option value="bpos">B+</option>
+                    <option value="bneg">B-</option>
+                    <option value="opos">O+</option>
+                    <option value="oneg">O-</option>
+                    <option value="abpos">AB+</option>
+                    <option value="abneg">AB-</option>
+                </select>
+            </div>
+            <div>
                 <label for="bp">Blood Pressure: </label>
                 <input type="number" min="20" max="350" required name="bp" id="bp">
             </div>
@@ -81,15 +108,15 @@ Diabetes -->
             </div>
             <div>
                 <label for="sg">Specific Gravity: </label>
-                <input type="number" required name="sg" id="sg">
+                <input type="number" required name="sg" id="sg" step="0.01">
             </div>
             <div>
                 <label for="alb">Albumin: </label>
-                <input type="number" required name="alb" id="alb">
+                <input type="number" required name="alb" id="alb" step="0.1">
             </div>
             <div>
                 <label for="rbc">Rbc Count: </label>
-                <input type="number" required name="rbc" id="rbc">
+                <input type="number" required name="rbc" id="rbc" step="0.1">
             </div>
             <div>
                 <label for="pcc">Pus Cell Count: </label>
@@ -150,31 +177,17 @@ Diabetes -->
     <div class="row first">
         <div class="col-column">
             <h3>Step 1</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, magnam. Facere autem nobis explicabo
-                quos sed
-                recusandae ullam iste perferendis, necessitatibus, repellendus, dolorum libero molestias voluptates.
-                Vero eum
-                voluptas in?</p>
+            <p>Select disease.</p>
         </div>
 
         <div class="col-column">
             <h3>Step 2</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, magnam. Facere autem nobis explicabo
-                quos
-                sed
-                recusandae ullam iste perferendis, necessitatibus, repellendus, dolorum libero molestias voluptates.
-                Vero eum
-                voluptas in?</p>
+            <p>Enter disease parameters.</p>
         </div>
 
         <div class="col-column">
             <h3>Step 3</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, magnam. Facere autem nobis explicabo
-                quos
-                sed
-                recusandae ullam iste perferendis, necessitatibus, repellendus, dolorum libero molestias voluptates.
-                Vero eum
-                voluptas in?</p>
+            <p>Know your chances of having the disease.</p>
         </div>
 
     </div>
@@ -186,7 +199,9 @@ Diabetes -->
     <h4>Why this</h4>
     <div class="under-line"></div>
     <div class="outer">
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem nemo explicabo nihil possimus error similique modi, nobis, illum assumenda molestiae, quas vel veniam dolor in totam. Hic, fuga? Aspernatur nesciunt pariatur corrupti id quisquam rem voluptas ut totam, laborum animi libero nisi fugiat mollitia, minus eos maiores saepe debitis est neque sunt similique doloribus repudiandae. Beatae, officiis rem? Placeat, perferendis?</p>
+        <p>Our aim is to provide a precise prediction about the possibility of a disease by analysing the factors related to that disease so that users gets to know about their health condition. 
+            Disease prevention involves actions to reduce or eliminate exposure to risks that might increase the chances that an individual will incur any health problems. 
+            Disease predictor saves time  by predicting the disease possibility so that an individual can get a check-up immediately.</p>
     </div>
 </section>
 
@@ -195,9 +210,7 @@ Diabetes -->
     <h4>About Us</h4>
     <div class="under-line"></div>
     <div class="outer">
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi in veritatis quisquam ad, autem ab? Ab officiis
-        nesciunt nemo quos iure quod possimus modi vel voluptatum harum praesentium, minus cumque itaque dicta ea eum
-        deserunt! Sapiente commodi voluptate architecto aliquid.</p></div>
+    <p>We are a group undergraduate cse students of <a href="https://www.thapar.edu" target="_blank">Thapar Institute of engeeneering and technology, Patiala.</a></p></div>
     
     <div class="row">
         <div class="open-col">
@@ -205,10 +218,11 @@ Diabetes -->
             <img src="{% static 'predictor/images/paras.jpeg' %}" alt="Oops">
             <div>
                 <h3>Paras Sood</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo corporis neque quam facilis, ad
-                    incidunt laborum perferendis autem quaerat necessitatibus.</p>
+                <p>Curious, Collaborative and self motivated individual who is always enthusiastic about learning new
+                    things. Open to new challenges and ready to take ownership of projects to bring them to fruition.
+                    Having good coding skills along with analytical thinking skills</p>
                     <br>
-                    <h5>Deployment, HTML & CSS</h5>
+                    <h5>Django, Javascript, HTML & CSS, Deployment</h5>
                     <div class="icons">
                         <a href="https://www.facebook.com/paras.sood.188/" target="_blank"><i class="class fa fa-facebook"></i></a>
                         <a href="https://www.instagram.com/paras29sood/" target="_blank"><i
@@ -230,7 +244,7 @@ Diabetes -->
                     <li><h5>Visit ---> <a href="https://abhinav-bagwari.github.io/abhinavbagwari/" target="_blank">my portfolio</a></h5></li>
                 </ul>
                     <br>
-                <h5>ML-Model, HTML & CSS</h5>
+                <h5>ML-Model, HTML & CSS, UI</h5>
             <div class="icons">
                 <a href="https://m.facebook.com/abhinav.bagwari" target="_blank"><i class="class fa fa-facebook"></i></a>
                 <a href="https://instagram.com/abhi_nav_03?utm_medium=copy_link" target="_blank"><i
@@ -245,11 +259,9 @@ Diabetes -->
             <img src="{% static 'predictor/images/aditya.jpeg' %}" alt="Oops">
             <div>
                 <h3>Aditya Sharotri</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo corporis neque quam facilis, ad
-                    incidunt
-                    laborum perferendis autem quaerat necessitatibus.</p>
+                <p>Energetic and passionate college student,Forward-thinking individual with refined interpersonal and multitasking skills. Comes with exceptional ability to work and learn at the same time to gain experience and further my knowledge on the system.</p>
                     <br>
-                <h5>HTML & CSS</h5>
+                <h5>HTML & CSS, Content Creator</h5>
             <div class="icons">
                 <a href="https://www.facebook.com/aditya.sharotri.7" target="_blank"><i class="class fa fa-facebook"></i></a>
                 <a href="https://instagram.com/adityaaaxo" target="_blank"><i class="class fa fa-instagram"></i></a>
@@ -263,11 +275,9 @@ Diabetes -->
             <img src="{% static 'predictor/images/tushar.jpeg' %}" alt="Oops">
             <div>
                 <h3>Tushar Chandana</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo corporis neque quam facilis, ad
-                    incidunt
-                    laborum perferendis autem quaerat necessitatibus.</p>
+                <p>Dedicated individual willing to assist in all aspects of the organization and management. Performance driven, has exceptional ability to develop valuable and essential ideas</p>
                     <br>
-                    <h5>HTML & CSS</h5>
+                    <h5>HTML & CSS, Content Creator</h5>
             <div class="icons">
                 <a href="https://www.facebook.com/people/Tushar-Chandna/100009259213022/" target="_blank"><i class="class fa fa-facebook"></i></a>
                 <a href="https://www.instagram.com/tusharchandna/?hl=en" target="_blank"><i class="class fa fa-instagram"></i></a>
@@ -283,7 +293,7 @@ Diabetes -->
 <!-- ------------------------FeedBack-------------- -->
 <section class="feedback">
     <div class="begin">
-        <h3>In case of any feedback,you may click<a href="#"> here.</a></h3>
+        <h3>In case of any feedback,you may click<a href="https://docs.google.com/forms/d/e/1FAIpQLSfDFtpHwbnglcX6kAvAXfPMKgA00Gpsyz-HJMDG1Ii3CW735w/viewform?usp=sf_link" target="_blank"> here.</a></h3>
     </div>
 </section>
 <section class="copyright">

@@ -159,6 +159,9 @@
     padding: 20px 12px;
     box-sizing: border-box;
     border: 2px solid red;
+    color: black;
+    font-size: 20px;
+    font-family: sans-serif;
   }
   h3 {
     text-align: center;
@@ -168,7 +171,12 @@
   .col-column:hover {
     box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
   }
-  
+  .col-column p{
+    color: black;
+    font-size: 20px;
+    font-family: sans-serif;
+    line-height: 1.8rem;
+  }
   @media screen and (max-width: 800px) {
     .first {
       display: grid;
@@ -290,6 +298,13 @@
       margin: 0 5px;
     }
   }
+  .outer p{
+    color: black;
+    font-size: 20px;
+    font-family: sans-serif;
+    line-height: 1.8rem;
+    /* font-weight: bold; */
+  }
   
   /* -------------------------------feedback-------------- */
   .begin a:hover {
@@ -329,6 +344,17 @@
     height: 42px;
     padding: 8px;
     font-size: 18px;
+    border-radius: .5rem; /* 12px */
+  }
+  .selectop{
+    background-color: white;
+    border-color: rgb(214, 212, 212);
+    border: 1px solid gray;
+    margin: 10px 0;
+    width: 400px;
+    height: 36px;
+    padding: 4px;
+    font-size: 14px;
     border-radius: .5rem; /* 12px */
   }
   input{
