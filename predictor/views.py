@@ -33,5 +33,16 @@ def predict(request):
         pred=kidney_model.predict(arr)
         output=int(pred[0])
         return JsonResponse({"output":output})
+    elif disease=='diabetes':
+        bp=body['bp']
+        pregnancy=body['pregnancy']
+        glucose=body['glucose']
+        bmi=body['bmi']
+        dp_fxn=body['dp_fx']
+        age=body['age']
+        arr=np.array([[pregnancy,glucose,bp,bmi,dp_fxn,age]])
+        pred=diabetes_model.predict(arr)
+        output=int(pred[0])
+        return JsonResponse({"output":output})
     else:
         return JsonResponse({"output":"Not implemented yet"})

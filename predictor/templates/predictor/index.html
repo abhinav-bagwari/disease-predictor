@@ -69,7 +69,7 @@ Diabetes -->
         </select>
     </div>
     <form id="kidney_data">
-        <div style="display: flex;flex-direction: column;text-align: center;">
+        <div class="inside_form">
             <h3>Kidney Form</h3>
             <div>
                 <label for="age">Age: </label>
@@ -156,9 +156,65 @@ Diabetes -->
     </form>
 
     <form id="diabetes_data">
-        <h3>Diabetes Form</h3>
-        <div>
-            <input type="submit" class="submitbtn" id="form_diabetes" disabled>
+        <div class="inside_form">
+            <h3>Diabetes Form</h3>
+            <div>
+                <label for="age_d">Age: </label>
+                <input type="number" min="5" max="130" required name="age_d" id="age_d">
+            </div>
+            <div>
+                <label for="gender_d">Gender: </label>
+                <select name="gender_d" id="gender_d" class="selectop">
+                    <option value="" selected>Select Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="notell">Choose not to tell</option>
+                </select>
+            </div>
+            <div id="pregnancy_div">
+                    <label for="pregnancy">Pregnant: </label>
+                    <select name="pregnancy" id="pregnancy" class="selectop">
+                        <option value="yes">Yes</option>
+                        <option value="no" selected>No</option>
+                    </select>
+                    <!-- <label for="pregnant">Yes</label>
+                    <input type="radio" name="pregnant" id="pregnant" value="yes">
+                    <label for="not_pregnant">No</label>
+                    <input type="radio" name="not_pregnant" id="not_pregnant" value="no"> -->
+            </div>
+            <div>
+                <label for="bloodgrp_d">Blood Group: </label>
+                <select name="bloodgrp_d" id="bloodgrp_d" class="selectop">
+                    <option value="" selected>Select Blood Group</option>
+                    <option value="apos">A+</option>
+                    <option value="aneg">A-</option>
+                    <option value="bpos">B+</option>
+                    <option value="bneg">B-</option>
+                    <option value="opos">O+</option>
+                    <option value="oneg">O-</option>
+                    <option value="abpos">AB+</option>
+                    <option value="abneg">AB-</option>
+                </select>
+            </div>
+            <div>
+                <label for="glucose">Glucose: </label>
+                <input type="number" name="glucose" id="glucose" required>
+            </div>
+            <div>
+                <label for="bp_d">Blood Pressure: </label>
+                <input type="number" name="bp" id="bp_d" required>
+            </div>
+            <div>
+                <label for="bmi">BMI: </label>
+                <input type="number" name="bmi" id="bmi" step="0.01" required>
+            </div>
+            <div>
+                <label for="d_pedigree_fxn">Diabetes Pedigree Function: </label>
+                <input type="number" name="d_pedigree_fxn" id="d_pedigree_fxn" required step="0.001">
+            </div>
+            <div>
+                <input type="submit" class="submitbtn" id="form_diabetes">
+            </div>
         </div>
     </form>
     <div id="waiting">
